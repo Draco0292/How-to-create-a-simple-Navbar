@@ -1,0 +1,40 @@
+*{
+    margin: 0; /* Aussenabstand für alle Objekte 0 */
+    padding: 0; /*Innenabstand für alle Objekte 0 */
+    font-family: sans-serif; /*Standart Schrift*/
+}
+
+html, body{
+    overflow-x: hidden; /* Alles was über den horizontalen Bildschirmrand raus geht, wird standartmäßig nicht angezeigt = man kann nicht horizontal Scrollen */
+    scroll-behavior: smooth; /* Wir werden später innerhalb der Seite Sprungpunkte einbauen. Damit das nicht so abgehackt aussieht, haben wir hier definiert, dass es Smooth ist. Aber später dazu mehr. */
+}
+
+/* --====== Hier wird der Style der Navbar definiert. ======-- */
+
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    height: 100%;
+    width: 100%;
+}
+
+nav ul .nav-menü-list-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav .nav-menü-list-items li{
+    list-style: none;
+    cursor: pointer;
+    color: #f1f1f1;
+}
